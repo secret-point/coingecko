@@ -1,0 +1,29 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "~Root/*": ["./src/*"]
+    },
+    "types": ["jest", "node"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "include": [
+    "./**/*",
+    "./*",
+    "./src/__test__",
+    ".eslintrc.js",
+    "declarations.d.ts",
+    "overwrite.d.ts",
+    "react-native-video-controls.d.ts"
+  ]
+}
