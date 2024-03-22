@@ -36,3 +36,5 @@ export const queryClientAxios = async ({queryKey}: {queryKey: QueryKey}) => {
 };
 
 export default instance;
+
+console.log("ABC");
