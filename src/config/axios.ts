@@ -19,7 +19,7 @@ instance.interceptors.response.use(
   err => {
     if (!!err.response && !!err.response.data) {
       const errorResponse = new ErrorResponse(err.response.data);
-
+      console.log(err);
       return Promise.reject(errorResponse);
     }
 
